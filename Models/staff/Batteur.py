@@ -3,14 +3,17 @@
 from dataclasses import dataclass
 
 from Models.consumable.Chocolat import chocolat
+from Models.recipients.Recipient import recipient
 from Models.staff.commis import commis
+from Models.consumable.Oeuf import eggs
 
 
 @dataclass
-class verseur(commis):
+class batteur(commis):
 
     name: str
-    chocolat : chocolat
+    recipient : recipient
+    eggs : eggs
 
     def __str__(self) -> str:
         commis_str = super().__str__()
