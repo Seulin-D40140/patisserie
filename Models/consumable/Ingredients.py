@@ -9,7 +9,6 @@ from abc import ABC
 class ingredients(ABC):
     name : str
     quantity : int
-    unity : str
 
     def __str__(self) -> str:
-        return f"name : {self.name} - quantiter : {self.quantity} - uniter : {self.unity}"
+        return f"name : {self.name} - quantiter : {self.quantity}"

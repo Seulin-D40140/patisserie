@@ -7,8 +7,7 @@ from abc import ABC
 
 @dataclass
 class commis(ABC):
-    name : str
     fonction : str
 
     def __str__(self) -> str:
-        return f"nom : {self.name} , fonction : {self.fonction}"
+        return f"fonction : {self.fonction}"

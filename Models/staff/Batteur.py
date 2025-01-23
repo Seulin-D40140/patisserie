@@ -17,4 +17,4 @@ class batteur(commis):
 
     def __str__(self) -> str:
         commis_str = super().__str__()
-        return f"{commis_str} - nom : {self.name} - chocolat : {self.chocolat}"
+        return f"{commis_str} - nom : {self.name} - coeuf : {self.eggs}"

@@ -11,9 +11,8 @@ from Models.recipients.Recipient import recipient
 class melangeur(commis):
     name: str
     recipient : recipient
-    eggs : eggs
-    chocolat : chocolat
+    time : int
 
     def __str__(self) -> str:
         commis_str = super().__str__()
-        return f"{commis_str} - nom : {self.name} - recipent : {self.recipient} - oeufs : {self.eggs} - chocolat : {self.chocolat}"
+        return f"{commis_str} - nom : {self.name} - recipent : {self.recipient} - oeufs : {self.time}"
